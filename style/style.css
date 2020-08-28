@@ -31,7 +31,7 @@ body {
   max-width: 900px;
   padding: 20px 30px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.95);
   -webkit-box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
@@ -46,6 +46,7 @@ body {
 
 .fa-quote-left {
   font-size: 4rem;
+  color: #f0cb25;
 }
 
 .quote-author {
@@ -72,7 +73,7 @@ button {
   border: none;
   border-radius: 10px;
   color: #ffffff;
-  background-color: #333;
+  background-color: #4e4d4d;
   outline: none;
   padding: 0.5rem 1.8rem;
   -webkit-box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
@@ -97,6 +98,38 @@ button:active {
 
 .fa-twitter {
   font-size: 1.2rem;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #686868;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 1000px) {
